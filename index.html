@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Type-Content" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Age Calculator App">
+    <meta name="description" content="Age Calculator App">
+    <meta name="author" content="xWhiteCode">
+    <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" sizes="32x32">
+    <title>Age Calculator App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+  </head>
+  <body>
+    <noscript>
+     For full functionality of this site it is necessary to enable JavaScript.
+     Here are the <a href="https://www.enable-javascript.com/">
+     instructions how to enable JavaScript in your web browser</a>.
+    </noscript>
+    <main class="flex">
+      <div class="age">
+        <div class="date">
+          <div class="inputs">
+            <label for="day">DAY</label>
+            <input type="text" name="day" id="day" class="input" placeholder="DD" aria-invalid="false" aria-describedby="day-error" maxlength="2" required>
+            <p id="day-error" class="error" role="alert">This field is required</p>
+          </div>
+          <div class="inputs">
+            <label for="month">MONTH</label>
+            <input type="text" name="month" id="month" class="input" placeholder="MM" aria-invalid="false" aria-describedby="month-error" maxlength="2" required>
+            <p id="month-error" class="error" role="alert">This field is required</p>
+          </div>
+          <div class="inputs">
+            <label for="year">YEAR</label>
+            <input type="text" name="year" id="year" class="input" placeholder="YYYY" aria-invalid="false" aria-describedby="year-error" maxlength="4" required>
+            <p id="year-error" class="error" role="alert">This field is required</p>
+          </div>
+          <button type="button" id="getResult" aria-label="get your age">
+            <img class="img" src="assets/images/icon-arrow.svg" alt="Get Your Age">
+          </button>
+        </div>
+        <div class="result">
+          <h1 class="h1"><span id="years">--</span> years</h1>
+          <h2 class="h1"><span id="months">--</span> months</h2>
+          <h2 class="h1"><span id="days">--</span> days</h2>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
